@@ -1,0 +1,5 @@
+# VSCode stuff
+.vscode/
+
+# Compiled CSS
+/dist/
