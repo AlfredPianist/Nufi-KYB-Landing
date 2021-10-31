@@ -8,7 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.b42fbfa8.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- For deployment -->
+    <!-- <link rel="stylesheet" href="./app/scss/style.scss" /> -->
+    <!-- For development -->
+    <link rel="stylesheet" href="index.8232608c.css">
     <title>Nufi KYB - Landing Page</title>
   </head>
   <body>
@@ -48,8 +52,8 @@
     <main>
       <!-- Hero -->
       <section id="hero" class="hero">
-        <div class="container">
-          <div class="hero__text">
+        <div class="container flex flex-g flex-w flex-ai-c flex-jc-se">
+          <div class="hero__text flex flex-c flex-g flex-ai-c">
             <h1>Nufi - KYB</h1>
             <p>Making your business recognition processes easier</p>
           </div>
@@ -57,29 +61,41 @@
         </div>
       </section>
       <!-- Features -->
-      <section id="features" class="features container">
+      <section id="features" class="features container flex flex-g flex-c flex-ai-c">
         <h2>Features</h2>
-        <div class="flex flex-c flex-ai-c flex-jc-sb">
-          <div>
-            <h3>Easy</h3>
-            <h3>Easy</h3>
-            <p>As easy as typing the business’ ID, legal name and trademark.</p>
+        <div class="flex flex-c flex-ai-c flex-jc-sb features__cards">
+          <div class="flex flex-r flex-g flex-ai-c features__card">
+            <div class="flex flex-r flex-ai-c">
+              <span class="fas fa-chevron-right margin-right features__icon"></span>
+              <span class="fas fa-chevron-right margin-right features__icon"></span>
+              <span class="fas fa-chevron-right features__icon"></span>
+            </div>
+            <div class="flex flex-c flex-ai-c flex-jc-c features__card__text right">
+              <h3>Easy</h3>
+              <p>
+                As easy as typing the business’ ID, legal name and trademark.
+              </p>
+            </div>
           </div>
-          <div>
-            <h3>Concise</h3>
-            <h3>Concise</h3>
-            <p>
-              Get all the information you need about the business of your
-              choice.
-            </p>
+          <div class="flex flex-r flex-ai-c features__card">
+            <div class="flex flex-c flex-ai-c flex-jc-c features__card__text left">
+              <h3>Concise</h3>
+              <p>
+                Get all the information you need about the business of your
+                choice.
+              </p>
+            </div>
+            <span class="fas fa-scroll features__icon"></span>
           </div>
-          <div>
-            <h3>Save time</h3>
-            <h3>Save time</h3>
-            <p>
-              We know your time is worthwhile. Save countless hours on paper
-              forms.
-            </p>
+          <div class="flex flex-r flex-ai-c features__card">
+            <span class="fas fa-clock features__icon"></span>
+            <div class="flex flex-c flex-ai-c flex-jc-c features__card__text right">
+              <h3>Save time</h3>
+              <p>
+                We know your time is worthwhile. Save countless hours on paper
+                forms.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -90,7 +106,7 @@
           We’re Innovex, and we’re a passionate software development team
           creating adaptable solutions for evolving needs.
         </p>
-        <div class="flex flex-r flex-w flex-jc-se">
+        <div class="flex flex-r flex-g flex-w flex-jc-se">
           <div class="about-us__dev">
             <img src="profile-alfredo.367c2166.png" alt="Alfredo - foto perfil">
             <h4>Alfredo Delgado Moreno</h4>
@@ -136,7 +152,7 @@
         </div>
       </section>
       <!-- About this project -->
-      <section id="about-project" class="about-project container flex flex-c flex-ai-c">
+      <section id="about-project" class="about-project container flex flex-c flex-g flex-ai-c">
         <h2>About this project</h2>
         <p>
           The fintech industry sparked curiosity within us, and thanks to the
