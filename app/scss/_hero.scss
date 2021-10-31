@@ -1,6 +1,11 @@
 .hero {
   position: relative;
 
+  .container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   &::before {
     content: "";
     background-image: url("/img/bg-login.jpg"),
@@ -21,8 +26,12 @@
   &__text {
     position: relative;
 
-    h1 {
-      margin: 0;
+    h1, p {
+      text-align: center;
+    }
+    p {
+      font-size: $font-lg;
+      max-width: 25rem;
     }
   }
 

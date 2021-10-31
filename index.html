@@ -11,7 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto:ital,wght@0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/app/scss/style.scss" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- For deployment -->
+    <!-- <link rel="stylesheet" href="./app/scss/style.scss" /> -->
+    <!-- For development -->
+    <link rel="stylesheet" href="./dev/style.css" />
     <title>Nufi KYB - Landing Page</title>
   </head>
   <body>
@@ -19,7 +26,7 @@
     <header class="header">
       <div class="overlay has-fade"></div>
       <nav class="container flex flex-jc-sb flex-ai-c">
-        <img src="/img/logo-nufi.svg" alt="Nufi logo" class="header__logo" />
+        <img src="./img/logo-nufi.svg" alt="Nufi logo" class="header__logo" />
 
         <!-- Mobile -->
         <a href="#!" id="btnHamburger" class="header__toggle hide-for-desktop">
@@ -40,7 +47,7 @@
             onclick="location.href='https://github.com/Sebas93cay/Nufi.kyb.v2'"
           >
             Follow us
-            <img src="/img/logo-github.svg" alt="Follow on GitHub" />
+            <img src="./img/logo-github.svg" alt="Follow on GitHub" />
           </button>
         </div>
       </nav>
@@ -55,8 +62,8 @@
     <main>
       <!-- Hero -->
       <section id="hero" class="hero">
-        <div class="container">
-          <div class="hero__text">
+        <div class="container flex flex-g flex-w flex-ai-c flex-jc-se">
+          <div class="hero__text flex flex-c flex-g flex-ai-c">
             <h1>Nufi - KYB</h1>
             <p>Making your business recognition processes easier</p>
           </div>
@@ -70,29 +77,45 @@
         </div>
       </section>
       <!-- Features -->
-      <section id="features" class="features container">
+      <section id="features" class="features container flex flex-g flex-c flex-ai-c">
         <h2>Features</h2>
-        <div class="flex flex-c flex-ai-c flex-jc-sb">
-          <div>
-            <h3>Easy</h3>
-            <h3>Easy</h3>
-            <p>As easy as typing the business’ ID, legal name and trademark.</p>
+        <div class="flex flex-c flex-ai-c flex-jc-sb features__cards">
+          <div class="flex flex-r flex-g flex-ai-c features__card">
+            <div class="flex flex-r flex-ai-c">
+              <span
+                class="fas fa-chevron-right margin-right features__icon"
+              ></span>
+              <span
+                class="fas fa-chevron-right margin-right features__icon"
+              ></span>
+              <span class="fas fa-chevron-right features__icon"></span>
+            </div>
+            <div class="flex flex-c flex-ai-c flex-jc-c features__card__text right">
+              <h3>Easy</h3>
+              <p>
+                As easy as typing the business’ ID, legal name and trademark.
+              </p>
+            </div>
           </div>
-          <div>
-            <h3>Concise</h3>
-            <h3>Concise</h3>
-            <p>
-              Get all the information you need about the business of your
-              choice.
-            </p>
+          <div class="flex flex-r flex-ai-c features__card">
+            <div class="flex flex-c flex-ai-c flex-jc-c features__card__text left">
+              <h3>Concise</h3>
+              <p>
+                Get all the information you need about the business of your
+                choice.
+              </p>
+            </div>
+            <span class="fas fa-scroll features__icon"></span>
           </div>
-          <div>
-            <h3>Save time</h3>
-            <h3>Save time</h3>
-            <p>
-              We know your time is worthwhile. Save countless hours on paper
-              forms.
-            </p>
+          <div class="flex flex-r flex-ai-c features__card">
+            <span class="fas fa-clock features__icon"></span>
+            <div class="flex flex-c flex-ai-c flex-jc-c features__card__text right">
+              <h3>Save time</h3>
+              <p>
+                We know your time is worthwhile. Save countless hours on paper
+                forms.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -103,55 +126,55 @@
           We’re Innovex, and we’re a passionate software development team
           creating adaptable solutions for evolving needs.
         </p>
-        <div class="flex flex-r flex-w flex-jc-se">
+        <div class="flex flex-r flex-g flex-w flex-jc-se">
           <div class="about-us__dev">
-            <img src="/img/profile-alfredo.png" alt="Alfredo - foto perfil" />
+            <img src="./img/profile-alfredo.png" alt="Alfredo - foto perfil" />
             <h4>Alfredo Delgado Moreno</h4>
             <h5>UI/UX<br />Backend developer</h5>
             <div class="about-us__icons flex flex-ai-c flex-jc-se">
               <a href="https://twitter.com/Alfred_Pianist/"
-                ><img src="/img/logo-twitter.svg" alt="Alfredo - Twitter"
+                ><img src="./img/logo-twitter.svg" alt="Alfredo - Twitter"
               /></a>
               <a href="https://github.com/AlfredPianist/"
-                ><img src="/img/logo-github.svg" alt="Alfredo - GitHub"
+                ><img src="./img/logo-github.svg" alt="Alfredo - GitHub"
               /></a>
               <a href="https://www.linkedin.com/in/alfredo-delgado-moreno/"
-                ><img src="/img/logo-linkedin.svg" alt="Alfredo - LinkedIn"
+                ><img src="./img/logo-linkedin.svg" alt="Alfredo - LinkedIn"
               /></a>
             </div>
           </div>
           <div class="about-us__dev">
             <img
-              src="/img/profile-sebastian.png"
+              src="./img/profile-sebastian.png"
               alt="Sebastián - foto perfil"
             />
             <h4>Juan Sebastián Caicedo Alfonso</h4>
             <h5>Frontend developer</h5>
             <div class="about-us__icons flex flex-ai-c flex-jc-se">
               <a href="https://twitter.com/Sebas93cay/">
-                <img src="/img/logo-twitter.svg" alt="Sebastián - Twitter" />
+                <img src="./img/logo-twitter.svg" alt="Sebastián - Twitter" />
               </a>
               <a href="https://github.com/Sebas93cay/">
-                <img src="/img/logo-github.svg" alt="Sebastián - GitHub" />
+                <img src="./img/logo-github.svg" alt="Sebastián - GitHub" />
               </a>
               <a href="https://www.linkedin.com/in/sebscaicedo/">
-                <img src="/img/logo-linkedin.svg" alt="Sebastián - LinkedIn" />
+                <img src="./img/logo-linkedin.svg" alt="Sebastián - LinkedIn" />
               </a>
             </div>
           </div>
           <div class="about-us__dev">
-            <img src="/img/profile-joel.png" alt="Joel - foto perfil" />
+            <img src="./img/profile-joel.png" alt="Joel - foto perfil" />
             <h4>Joel Alexánder Ramírez Núñez</h4>
             <h5>Backend developer</h5>
             <div class="about-us__icons flex flex-ai-c flex-jc-se">
               <a href="https://twitter.com/JoelRamirez96/">
-                <img src="/img/logo-twitter.svg" alt="Joel - Twitter" />
+                <img src="./img/logo-twitter.svg" alt="Joel - Twitter" />
               </a>
               <a href="https://github.com/JoelRamirez2016/">
-                <img src="/img/logo-github.svg" alt="Joel - GitHub" />
+                <img src="./img/logo-github.svg" alt="Joel - GitHub" />
               </a>
               <a href="https://www.linkedin.com/in/joel-ramirez-637644145/">
-                <img src="/img/logo-linkedin.svg" alt="Joel - LinkedIn" />
+                <img src="./img/logo-linkedin.svg" alt="Joel - LinkedIn" />
               </a>
             </div>
           </div>
@@ -160,7 +183,7 @@
       <!-- About this project -->
       <section
         id="about-project"
-        class="about-project container flex flex-c flex-ai-c"
+        class="about-project container flex flex-c flex-g flex-ai-c"
       >
         <h2>About this project</h2>
         <p>
@@ -181,11 +204,11 @@
             onclick="location.href='https://github.com/Sebas93cay/Nufi.kyb.v2'"
           >
             Follow us
-            <img src="/img/logo-github.svg" alt="Follow on GitHub" />
+            <img src="./img/logo-github.svg" alt="Follow on GitHub" />
           </button>
         </div>
       </section>
     </main>
-    <script src="/app/js/script.js"></script>
+    <script src="./app/js/script.js"></script>
   </body>
 </html>

@@ -1,2 +1,35 @@
 .features {
+  &__icon {
+    font-size: 6rem;
+    color: $secondary;
+  }
+
+  &__cards {
+    gap: 2rem;
+  }
+
+  &__card {
+    border-radius: 0.3rem;
+    padding: 1rem;
+    box-shadow: 1rem 1rem 2rem rgba($primary, 0.25);
+
+    .right {
+      padding-left: 0.5rem;
+    }
+    .left {
+      padding-right: 0.5rem;
+    }
+    &__text {
+      h3 {
+        font-family: $poppins;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .margin-right {
+    margin-right: -1.875rem;
+  }
 }

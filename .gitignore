@@ -1,8 +1,11 @@
 # VSCode stuff
 .vscode/
 
-# Compiled CSS
+# Parcel stuff
 /dist/
+
+# Compiled dev CSS
+/dev/
 
 # NPM stuff
 /node_modules/

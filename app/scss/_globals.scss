@@ -111,10 +111,11 @@ section {
   }
   &-r {
     flex-direction: row;
-    row-gap: 1rem;
   }
   &-c {
     flex-direction: column;
+  }
+  &-g {
     row-gap: 1rem;
   }
   &-jc-sb {
