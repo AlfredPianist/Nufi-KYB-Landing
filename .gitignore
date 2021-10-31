@@ -3,3 +3,9 @@
 
 # Compiled CSS
 /dist/
+
+# NPM stuff
+/node_modules/
+
+# Parcel stuff
+/.parcel-cache/
