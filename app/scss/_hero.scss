@@ -1,0 +1,35 @@
+.hero {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("/img/bg-login.jpg"),
+      linear-gradient(180deg, $secondary, $bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-blend-mode: screen;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+  }
+
+  &__text {
+    position: relative;
+
+    h1 {
+      margin: 0;
+    }
+  }
+
+  &__video {
+    position: relative;
+    border: 0;
+    width: 560px;
+    height: 315px;
+  }
+}

@@ -15,8 +15,8 @@
     <title>Nufi KYB - Landing Page</title>
   </head>
   <body>
+    <!-- Navigation -->
     <header class="header">
-      <!-- Navigation -->
       <div class="overlay has-fade"></div>
       <nav class="container flex flex-jc-sb flex-ai-c">
         <img src="/img/logo-nufi.svg" alt="Nufi logo" class="header__logo" />
@@ -29,93 +29,139 @@
         <!-- Desktop -->
         <div class="flex flex-jc-sb flex-ai-c hide-for-mobile">
           <div class="header__links">
-            <a href="#">Home</a>
-            <a href="#">Features</a>
-            <a href="#">About</a>
+            <a href="#hero">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about-us">About us</a>
+            <a href="#about-project">About the project</a>
           </div>
-          <button type="button" class="header__cta flex flex-jc-sb flex-ai-c">
-            Follow on GitHub
+          <button
+            type="button"
+            class="header__cta flex flex-jc-sb flex-ai-c"
+            onclick="location.href='https://github.com/Sebas93cay/Nufi.kyb.v2'"
+          >
+            Follow us
             <img src="/img/logo-github.svg" alt="Follow on GitHub" />
           </button>
         </div>
       </nav>
       <div class="header__menu has-fade">
-        <a href="#">Home</a>
-        <a href="#">Features</a>
-        <a href="#">About</a>
+        <a href="#hero">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about-us">About us</a>
+        <a href="#about-project">About the project</a>
       </div>
     </header>
-
+    <!-- Main -->
     <main>
-      <!-- Landing -->
-      <div>
-        <h1>Nufi - KYB</h1>
-        <p>Making your business recognition processes easier</p>
-      </div>
+      <!-- Hero -->
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero__text">
+            <h1>Nufi - KYB</h1>
+            <p>Making your business recognition processes easier</p>
+          </div>
+          <iframe
+            class="hero__video"
+            src="https://www.youtube.com/embed/vxW9VkJ55Pc"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
       <!-- Features -->
-      <div>
+      <section id="features" class="features container">
         <h2>Features</h2>
-        <div>
-          <h3>Easy</h3>
-          <h3>Easy</h3>
-          <p>As easy as typing the business’ ID, legal name and trademark.</p>
+        <div class="flex flex-c flex-ai-c flex-jc-sb">
+          <div>
+            <h3>Easy</h3>
+            <h3>Easy</h3>
+            <p>As easy as typing the business’ ID, legal name and trademark.</p>
+          </div>
+          <div>
+            <h3>Concise</h3>
+            <h3>Concise</h3>
+            <p>
+              Get all the information you need about the business of your
+              choice.
+            </p>
+          </div>
+          <div>
+            <h3>Save time</h3>
+            <h3>Save time</h3>
+            <p>
+              We know your time is worthwhile. Save countless hours on paper
+              forms.
+            </p>
+          </div>
         </div>
-        <div>
-          <h3>Concise</h3>
-          <h3>Concise</h3>
-          <p>
-            Get all the information you need about the business of your choice.
-          </p>
-        </div>
-        <div>
-          <h3>Save time</h3>
-          <h3>Save time</h3>
-          <p>
-            We know your time is worthwhile. Save countless hours on paper
-            forms.
-          </p>
-        </div>
-      </div>
+      </section>
       <!-- About us -->
-      <div>
+      <section id="about-us" class="about-us container">
         <h2>About us</h2>
         <p>
           We’re Innovex, and we’re a passionate software development team
           creating adaptable solutions for evolving needs.
         </p>
-        <div>
-          <img src="/img/profile-alfredo.jpg" alt="Alfredo - foto perfil" />
-          <h4>Alfredo Delgado Moreno</h4>
-          <h5>UI/UX<br />Backend developer</h5>
-          <div>
-            <img src="/img/logo-twitter.svg" alt="Alfredo - Twitter" />
-            <img src="/img/logo-github.svg" alt="Alfredo - GitHub" />
-            <img src="/img/logo-linkedin.svg" alt="Alfredo - LinkedIn" />
+        <div class="flex flex-r flex-w flex-jc-se">
+          <div class="about-us__dev">
+            <img src="/img/profile-alfredo.png" alt="Alfredo - foto perfil" />
+            <h4>Alfredo Delgado Moreno</h4>
+            <h5>UI/UX<br />Backend developer</h5>
+            <div class="about-us__icons flex flex-ai-c flex-jc-se">
+              <a href="https://twitter.com/Alfred_Pianist/"
+                ><img src="/img/logo-twitter.svg" alt="Alfredo - Twitter"
+              /></a>
+              <a href="https://github.com/AlfredPianist/"
+                ><img src="/img/logo-github.svg" alt="Alfredo - GitHub"
+              /></a>
+              <a href="https://www.linkedin.com/in/alfredo-delgado-moreno/"
+                ><img src="/img/logo-linkedin.svg" alt="Alfredo - LinkedIn"
+              /></a>
+            </div>
+          </div>
+          <div class="about-us__dev">
+            <img
+              src="/img/profile-sebastian.png"
+              alt="Sebastián - foto perfil"
+            />
+            <h4>Juan Sebastián Caicedo Alfonso</h4>
+            <h5>Frontend developer</h5>
+            <div class="about-us__icons flex flex-ai-c flex-jc-se">
+              <a href="https://twitter.com/Sebas93cay/">
+                <img src="/img/logo-twitter.svg" alt="Sebastián - Twitter" />
+              </a>
+              <a href="https://github.com/Sebas93cay/">
+                <img src="/img/logo-github.svg" alt="Sebastián - GitHub" />
+              </a>
+              <a href="https://www.linkedin.com/in/sebscaicedo/">
+                <img src="/img/logo-linkedin.svg" alt="Sebastián - LinkedIn" />
+              </a>
+            </div>
+          </div>
+          <div class="about-us__dev">
+            <img src="/img/profile-joel.png" alt="Joel - foto perfil" />
+            <h4>Joel Alexánder Ramírez Núñez</h4>
+            <h5>Backend developer</h5>
+            <div class="about-us__icons flex flex-ai-c flex-jc-se">
+              <a href="https://twitter.com/JoelRamirez96/">
+                <img src="/img/logo-twitter.svg" alt="Joel - Twitter" />
+              </a>
+              <a href="https://github.com/JoelRamirez2016/">
+                <img src="/img/logo-github.svg" alt="Joel - GitHub" />
+              </a>
+              <a href="https://www.linkedin.com/in/joel-ramirez-637644145/">
+                <img src="/img/logo-linkedin.svg" alt="Joel - LinkedIn" />
+              </a>
+            </div>
           </div>
         </div>
-        <div>
-          <img src="/img/profile-sebastian.jpg" alt="Sebastián - foto perfil" />
-          <h4>Juan Sebastián Caicedo Alfonso</h4>
-          <h5>Frontend developer</h5>
-          <div>
-            <img src="/img/logo-twitter.svg" alt="Sebastián - Twitter" />
-            <img src="/img/logo-github.svg" alt="Sebastián - GitHub" />
-            <img src="/img/logo-linkedin.svg" alt="Sebastián - LinkedIn" />
-          </div>
-        </div>
-        <div>
-          <img src="/img/profile-joel.jpg" alt="Joel - foto perfil" />
-          <h4>Joel Alexánder Ramírez Núñez</h4>
-          <h5>Backend developer</h5>
-          <div>
-            <img src="/img/logo-twitter.svg" alt="Joel - Twitter" />
-            <img src="/img/logo-github.svg" alt="Joel - GitHub" />
-            <img src="/img/logo-linkedin.svg" alt="Joel - LinkedIn" />
-          </div>
-        </div>
-      </div>
+      </section>
       <!-- About this project -->
-      <div>
+      <section
+        id="about-project"
+        class="about-project container flex flex-c flex-ai-c"
+      >
         <h2>About this project</h2>
         <p>
           The fintech industry sparked curiosity within us, and thanks to the
@@ -129,12 +175,16 @@
           laundering and terrorist financing.
         </p>
         <div>
-          <button type="button" class="flex flex-jc-sb flex-ai-c">
-            Follow on GitHub
+          <button
+            type="button"
+            class="about-project__cta flex flex-jc-sb flex-ai-c"
+            onclick="location.href='https://github.com/Sebas93cay/Nufi.kyb.v2'"
+          >
+            Follow us
             <img src="/img/logo-github.svg" alt="Follow on GitHub" />
           </button>
         </div>
-      </div>
+      </section>
     </main>
     <script src="/app/js/script.js"></script>
   </body>

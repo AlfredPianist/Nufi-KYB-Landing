@@ -1,0 +1,11 @@
+.about-project {
+  &__cta {
+    font-size: $font-md;
+    img {
+      height: 2.5rem;
+    }
+  }
+  p {
+    font-size: $font-xs;
+  }
+}

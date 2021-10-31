@@ -1,0 +1,35 @@
+.about-us {
+  h4 {
+    font-size: $font-md;
+    text-align: center;
+  }
+
+  h5 {
+    font-weight: 400;
+    font-size: $font-sm;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  &__dev {
+    width: 12.1875rem;
+
+    img {
+      height: 12.1875rem;
+      width: 12.1875rem;
+    }
+  }
+
+  &__icons {
+    img {
+      height: 2rem;
+      width: 2rem;
+      border-radius: 0%;
+    }
+
+    a {
+      height: 2rem;
+    }
+  }
+}

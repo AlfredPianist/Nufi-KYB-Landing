@@ -2,6 +2,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  scroll-padding-top: 7rem;
 }
 
 *,
@@ -15,13 +16,40 @@ body {
   padding: 0;
   background-color: $bg;
   font-family: $roboto;
-  font-size: $font-lg;
+  font-size: $font-sm;
   color: $primary;
   line-height: 1.3;
 
   &.no-scroll {
     overflow: hidden;
   }
+}
+
+// Margin header reset
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: $poppins;
+}
+
+h1 {
+  font-size: $font-xl;
+  letter-spacing: 0.35rem;
+}
+
+h2 {
+  font-size: $font-lg;
+  letter-spacing: 0.15rem;
 }
 
 a {
@@ -65,15 +93,35 @@ button,
   padding-left: 3rem;
 }
 
+section {
+  &:not(&:first-child) {
+    margin-top: 1rem;
+  }
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 // Flexbox styles
 .flex {
   display: flex;
 
+  &-w {
+    flex-wrap: wrap;
+  }
+  &-r {
+    flex-direction: row;
+    row-gap: 1rem;
+  }
   &-c {
     flex-direction: column;
+    row-gap: 1rem;
   }
   &-jc-sb {
     justify-content: space-between;
+  }
+  &-jc-se {
+    justify-content: space-evenly;
   }
   &-jc-c {
     justify-content: center;
