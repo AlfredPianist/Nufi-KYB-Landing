@@ -142,11 +142,13 @@ section:not(section:first-child) {
 
 .flex-r {
   flex-direction: row;
-  row-gap: 1rem;
 }
 
 .flex-c {
   flex-direction: column;
+}
+
+.flex-g {
   row-gap: 1rem;
 }
 
@@ -293,6 +295,11 @@ section:not(section:first-child) {
   position: relative;
 }
 
+.hero .container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .hero::before {
   content: "";
   background-image: url("bg-login.825a9456.jpg"), linear-gradient(180deg, #1933e3, #ffffff);
@@ -313,8 +320,13 @@ section:not(section:first-child) {
   position: relative;
 }
 
-.hero__text h1 {
-  margin: 0;
+.hero__text h1, .hero__text p {
+  text-align: center;
+}
+
+.hero__text p {
+  font-size: 2rem;
+  max-width: 25rem;
 }
 
 .hero__video {
@@ -324,8 +336,45 @@ section:not(section:first-child) {
   height: 315px;
 }
 
+.features__icon {
+  font-size: 6rem;
+  color: #1933e3;
+}
+
+.features__cards {
+  gap: 2rem;
+}
+
+.features__card {
+  border-radius: 0.3rem;
+  padding: 1rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+.features__card .right {
+  padding-left: 0.5rem;
+}
+
+.features__card .left {
+  padding-right: 0.5rem;
+}
+
+.features__card__text h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+.features__card__text p {
+  text-align: center;
+}
+
+.features .margin-right {
+  margin-right: -1.875rem;
+}
+
 .about-us p {
   text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .about-us h4 {
@@ -370,5 +419,7 @@ section:not(section:first-child) {
 
 .about-project p {
   font-size: 1.125rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 /*# sourceMappingURL=index.b42fbfa8.css.map */
