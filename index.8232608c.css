@@ -1,0 +1,450 @@
+.has-fade {
+  visibility: hidden;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 200ms ease-in-out forwards;
+          animation: fade-in 200ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 200ms ease-in-out forwards;
+          animation: fade-out 200ms ease-in-out forwards;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-padding-top: 7rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  color: #000000;
+  line-height: 1.3;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: 0.35rem;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+}
+
+a {
+  text-decoration: none;
+  color: #1933e3;
+}
+
+a:hover {
+  color: #7283f0;
+  transition: color 150ms ease-in-out;
+}
+
+button,
+.button {
+  background: linear-gradient(60deg, #9781eb, #4420cd);
+  border-radius: 50px;
+  border: none;
+  padding: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+  transition: opacity 150ms ease-in-out;
+}
+
+button img,
+.button img {
+  margin-left: 0.75rem;
+  filter: invert(1);
+}
+
+button:hover,
+.button:hover {
+  opacity: 0.7;
+}
+
+.container {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+section {
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+section:not(section:first-child) {
+  margin-top: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-w {
+  flex-wrap: wrap;
+}
+
+.flex-r {
+  flex-direction: row;
+}
+
+.flex-c {
+  flex-direction: column;
+}
+
+.flex-g {
+  row-gap: 1rem;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-jc-se {
+  justify-content: space-evenly;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.header nav {
+  height: 7rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.header__cta {
+  font-size: 1.5rem;
+}
+
+.header__cta img {
+  height: 2rem;
+}
+
+.header__logo {
+  height: 100%;
+}
+
+.header__links a {
+  position: relative;
+  padding: 0 0.7rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.header__links a:last-of-type {
+  margin-right: 1rem;
+}
+
+.header__links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: -11px;
+  background: #856be8;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+.header__links a:hover::before {
+  opacity: 1;
+}
+
+.header__toggle > span {
+  display: block;
+  width: 1.625rem;
+  height: 0.2rem;
+  background-color: #1933e3;
+  transition: all 200ms ease-in-out;
+  transform-origin: 1px 2px;
+}
+
+.header__toggle > span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.header .overlay {
+  position: fixed;
+  top: 7rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  background: linear-gradient(#4420cd, transparent);
+}
+
+.header.open .overlay {
+  display: block;
+}
+
+.header.open .header__toggle > span:first-child {
+  transform: rotate(45deg);
+}
+
+.header.open .header__toggle > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__toggle > span:last-child {
+  transform: rotate(-45deg);
+}
+
+.header__menu {
+  background: #ffffff;
+  position: absolute;
+  width: calc(100% - 6rem);
+  margin-top: 1rem;
+  padding: 1.625rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.header__menu a {
+  display: block;
+  padding: 0.625rem;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero .container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.hero::before {
+  content: "";
+  background-image: url("bg-login.825a9456.jpg"), linear-gradient(180deg, #1933e3, #ffffff);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: screen;
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+
+.hero__text {
+  position: relative;
+}
+
+.hero__text h1, .hero__text p {
+  text-align: center;
+}
+
+.hero__text p {
+  font-size: 2rem;
+  max-width: 25rem;
+}
+
+.hero__video {
+  position: relative;
+  border: 0;
+  width: 560px;
+  height: 315px;
+}
+
+.features__icon {
+  font-size: 6rem;
+  color: #1933e3;
+}
+
+.features__cards {
+  gap: 2rem;
+}
+
+.features__card {
+  border-radius: 0.3rem;
+  padding: 1rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+.features__card .right {
+  padding-left: 0.5rem;
+}
+
+.features__card .left {
+  padding-right: 0.5rem;
+}
+
+.features__card__text h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+.features__card__text p {
+  text-align: center;
+}
+
+.features .margin-right {
+  margin-right: -1.875rem;
+}
+
+.about-us p {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.about-us h4 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.about-us h5 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.about-us__dev {
+  width: 12.1875rem;
+}
+
+.about-us__dev img {
+  height: 12.1875rem;
+  width: 12.1875rem;
+}
+
+.about-us__icons img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0%;
+}
+
+.about-us__icons a {
+  height: 2rem;
+}
+
+.about-project__cta {
+  font-size: 1.5rem;
+}
+
+.about-project__cta img {
+  height: 2.5rem;
+}
+
+.about-project p {
+  font-size: 1.125rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+/*# sourceMappingURL=index.8232608c.css.map */
